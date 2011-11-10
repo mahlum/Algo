@@ -26,7 +26,7 @@ public class GenerateValues {
 	}
 	
 	public void sortIt(){
-		Quicksort.quick_sort(field);
+		Quicksort.quick_sort(field, 0);
 	}
 	
 	public Integer getFieldValue(int i){
