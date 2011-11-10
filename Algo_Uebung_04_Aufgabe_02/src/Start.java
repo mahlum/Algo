@@ -10,13 +10,23 @@ public class Start {
 			
 		}
 		
-		val.setValues(4000000, 2);
-		timeStart = System.currentTimeMillis();
-		val.sortIt();
-		timeEnd = System.currentTimeMillis();
-		System.out.println((timeEnd - timeStart) + " mSec bei " + Integer.MAX_VALUE + " verschiedene Values");
-		for(int i = 30; i < 65; ++i){
-			System.out.print(val.getFieldValue(i) + " ");
+		
+		for(int i = 1; i < 4; ++i){
+			for(int j = 0; j < 4; ++j){
+				val.setValues(2000000, i);
+				timeStart = System.currentTimeMillis();
+				val.sortIt(j);
+				timeEnd = System.currentTimeMillis();
+				System.out.println((timeEnd - timeStart) + " mSec bei " + i + ".ter Choice");
+			}
+//			for(int j = 30; j < 65; ++j){
+//				System.out.print(val.getFieldValue(i) + " ");
+//			}
+			System.out.println("");
+			System.out.println("---------");
 		}
+		
+		
+		
 	}
 }

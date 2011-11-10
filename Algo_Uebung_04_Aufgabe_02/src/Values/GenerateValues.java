@@ -15,7 +15,7 @@ public class GenerateValues {
 			break;
 		case 2:
 			for (int i = 0; i < values; ++i)
-				field[i] = (int) (Math.random() * Integer.MAX_VALUE);
+				field[i] = (int) (Math.random() * 5000000);
 			break;
 		case 3:
 			for (int i = 0; i < values; ++i)
@@ -25,8 +25,8 @@ public class GenerateValues {
 		
 	}
 	
-	public void sortIt(){
-		Quicksort.quick_sort(field, 0);
+	public void sortIt(int j){
+		Quicksort.quick_sort(field, j);
 	}
 	
 	public Integer getFieldValue(int i){

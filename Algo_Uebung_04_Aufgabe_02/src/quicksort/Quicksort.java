@@ -78,8 +78,9 @@ public class Quicksort {
 			return (K)new Float(((Float)one + (Float)two)/2);
 		if(one instanceof Long)
 			return (K)new Long(((Long)one + (Long)two)/2);
-		
 		return null;
 	}
+	
+	
 }
 
